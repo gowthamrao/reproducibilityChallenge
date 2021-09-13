@@ -21,7 +21,7 @@ description <- "OHDSI Symposium 2021 reproducibility study"
 library(magrittr)
 # Set up
 baseUrl <- "http://ohdsisym21.us-east-1.elasticbeanstalk.com/WebAPI"
-cohortIds <- c(16)
+cohortIds <- c(16, 2:10)
 
 
 
