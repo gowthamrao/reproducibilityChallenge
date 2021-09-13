@@ -57,7 +57,6 @@ x <- list()
 for (i in (1:length(databaseIds))) {
   databaseId <- databaseIds[[i]]
   cdmSource <- cdmSources %>%
-    dplyr::filter(.data$sequence == 1) %>% 
     dplyr::filter(database == databaseId)
   
   if (uploadToLocalPostGresDatabase) {

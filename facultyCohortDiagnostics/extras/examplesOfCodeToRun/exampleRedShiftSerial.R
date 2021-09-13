@@ -65,8 +65,7 @@ siteUserName <- ""
 x <- list()
 for (i in (1:length(databaseIds))) {
   databaseId <- databaseIds[[i]]
-  cdmSource <- cdmSources %>%
-    dplyr::filter(.data$sequence == 1) %>% 
+  cdmSource <- cdmSources %>% 
     dplyr::filter(database == databaseId)
   
   if (uploadToLocalPostGresDatabase) {
